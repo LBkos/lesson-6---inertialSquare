@@ -39,7 +39,7 @@ class ViewController: UIViewController {
 
         pushBehavior = UIPushBehavior(items: [squareView], mode: .continuous)
         snap = UISnapBehavior(item: squareView, snapTo: .init(x: view.center.x, y: view.center.y))
-        snap.damping = 1.3
+        snap.damping = 1.0
         animator.addBehavior(snap)
         animator.addBehavior(pushBehavior)
     }
